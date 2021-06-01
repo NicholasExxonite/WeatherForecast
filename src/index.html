@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather Now</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>Weather App</h1>
+  <div id="app"></div>
+
+  <div class="location">
+    <form action="" class="change-location d-flex flex-column">
+      <label style="color: #4C5372"> Enter city name </label>
+      <input type="text" class="cityName p-1 mt-1" name="city"
+      autocomplete="off">
+    </form>
+  </div>
+
+  <div class="weather-detail d-flex d-none">
+    <div class="detail d-flex flex-column px-4 text-light fw-lighter">
+      <div class="condition mx-2">
+        <p class="fs-4"> Weather Condition</p>
+      </div>
+      <div class="degree d-flex">
+        <div class="centegrate">
+          <span class="display-3"> 25</span>
+          <span class=display-4> &deg;C</span>
+        </div>
+      </div>
+
+      <div class="time d-flex text-light px-3 fw-lighter pb-4 d-none">
+        <div class="mx-4 curTime fs-5">12:00PM</div>
+        <div class="mx-4 curCity fs-5"> City Name</div>
+        <div class ="mx-4 curMeridiem fs-5"> Day or Night</div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+  <script src="forecast.js"></script>
+</body>
+</html>
