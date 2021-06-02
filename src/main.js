@@ -1,5 +1,6 @@
 
 'use strict';
+
 const getCityForm = document.querySelector('form');
 const degree = document.querySelector('.centegrate span');
 const condition = document.querySelector('.condition');
@@ -47,6 +48,21 @@ getCityForm.addEventListener('submit', e =>{
     })
 })
 
+const timestampConverter = (ts) =>{
+  // convert timestamp to Date
+  var time = new Date(ts);
+
+  //get d/m/y
+  var date = time.toLocaleDateString();
+
+  // var hour = time.getHours();
+  // var min = time.getMinutes();
+  // var sec = time.getSeconds();
+  //
+  // var timeNow = hour + ' ' + min + ' ' + sec;
+  curTime.textContent = date;
+}
+
 const updateUI = (data) =>{
   wDetail.classList.remove('d-none')
   cityTime.classList.remove('d-none')
@@ -62,14 +78,22 @@ const updateUI = (data) =>{
 
   //icon.setAttribute('src', `icons/`)
   const timestamp = forecastDetails.LocalObservationDateTime;
-  const now = new Date(timestamp);
 
-  curTime.textContent = now.toLocaleDateString()
+  timestampConverter(timestamp);
   curCity.textContent = cityDetail.EnglishName
 
-  if(forecastDetails.isDayTime){
+  if(forecastDetails.IsDayTime){
     curMeridiem.textContent = "Day";
+
   }else {
     curMeridiem.textContent = "Night";
   }
 }
+
+//Jquery testing..
+
+// $(document).ready(function() {
+//   $("#triggerbutton").click(function(){
+//     $("#demo").html("hello, world!");
+//   })
+// })

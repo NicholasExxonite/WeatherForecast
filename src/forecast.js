@@ -1,5 +1,5 @@
 // Access-Control-Allow-Origin: *;
-const key = 'C3LmZN5Fnz3b8clzFaVaJNgcCWeQYW1j';
+const key = '5pFu75mFs3LT4FveLGFVP7yD29Lpk715';
 const weatherUrl = 'http://dataservice.accuweather.com/currentconditions/v1/';
 const cityUrl = 'http://dataservice.accuweather.com/locations/v1/cities/search';
 
@@ -19,7 +19,7 @@ const cityUrl = 'http://dataservice.accuweather.com/locations/v1/cities/search';
 //
 // const getForecast = async(id) =>{
 //   // const url = 'http://dataservice.accuweather.com/currentconditions/v1/';
-//   const url = 'http://dataservice.accuweather.com/forecasts/v1/daily/1day/{locationKey}';
+//   const url = 'http://dataservice.accuweather.com/forecasts/v1/daily/1day/';
 //   const query = `${id}?apikey = ${key}`
 //
 // //fetch returns a promise - we use await to wait for it to be resloved

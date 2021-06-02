@@ -1,0 +1,59 @@
+.fs-4{
+  color: black;
+}
+.mx-4{
+  color: black;
+}
+.mx-2{
+  color: black;
+}
+.degree{
+  color: black;
+}
+.detail{
+  color: black;
+}
+input{
+  width: 100%;
+  max-width: 400px;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  border-radius: 20px;
+}
+/* .cityName {
+  background: black;
+  opacity: 0.01;
+} */
+.cityName{
+  width: 500px;
+}
+.container-fluid{
+  width: 500px;
+
+}
+.change-location{
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.inputText{
+  font-size: 24px;
+}
+.detail{
+  justify-content: flex-end;
+  height: 500px;
+  width: 100%;
+}
+.time {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.condition{
+  align-self: flex-end;
+}
+.degree{
+  justify-content: flex-end;
+}
+
+.weather-detail{
+
+}
