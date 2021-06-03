@@ -1,17 +1,17 @@
 .fs-4{
-  color: black;
+  color: white;
 }
 .mx-4{
-  color: black;
+  color: white;
 }
 .mx-2{
-  color: black;
+  color: white;
 }
 .degree{
-  color: black;
+  color: white;
 }
 .detail{
-  color: black;
+  color: white;
 }
 input{
   width: 100%;
@@ -23,10 +23,20 @@ input{
   background: black;
   opacity: 0.01;
 } */
+.appBody{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../images/pexels-porapak-apichodilok-346885.jpg');
+  background-size: 100% 100%;
+}
+
 .cityName{
   width: 500px;
 }
 .container-fluid{
+  padding-top: 100px;
   width: 500px;
 
 }
@@ -35,25 +45,55 @@ input{
   align-items: center;
 }
 
+
 .inputText{
   font-size: 24px;
 }
 .detail{
   justify-content: flex-end;
-  height: 500px;
+  /* height: 500px; */
+  height: 100%;
   width: 100%;
 }
+
+
+.locationName{
+  font-size: 30px;
+  font-weight: 600;
+  justify-content: flex-start;
+  padding-left: 10px;
+  text-transform: capitalize;
+}
 .time {
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: flex-start;
+
 }
 .condition{
+  /* align-content: flex-end; */
   align-self: flex-end;
+  font-weight: 600;
+  font-size: 18px;
+
 }
 .degree{
   justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+/* .degree > *:first-child{
+  margin-right: 20px;
+} */
+
+.curMeridiem{
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .weather-detail{
-
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  font-size: 22px;
 }

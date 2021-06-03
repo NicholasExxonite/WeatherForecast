@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <!-- Photo by Porapak Apichodilok from Pexels -->
   <!-- <h1>Weather App</h1> -->
 
 
@@ -28,29 +29,37 @@
   <!-- <button id="triggerbutton">Click me</button>
   <p id="demo"></p> -->
 
-  <div class="weather-detail d-flex d-none">
+  <div class="weather-detail d-none">
     <div class="detail d-flex flex-column px-4 text-light fw-lighter">
-      <div class="condition mx-2">
-        <p class="fs-4"> Weather Condition</p>
-      </div>
-      <div class="degree d-flex">
-        <div class="centegrate">
-          <span class="display-3"> 25</span>
-          <span class=display-4> &deg;C</span>
+
+        <div class="condition mx-2">
+          <p class="fs-4"> Weather Condition</p>
         </div>
-      </div>
+        <div class="degree d-flex">
+          <div class="centegrate">
+            <span class="display-3">0</span>
+            <span class=display-4> &deg;C</span>
+          </div>
+          <div class = "fahrenheit">
+            <span class ="display-3">0</span>
+            <span class="display-4"> &deg;F</span>
+          </div>
+        </div>
 
-      <div class="time d-flex text-light px-3 fw-lighter pb-4 d-none">
-        <div class="mx-4 curTime fs-5">12:00PM</div>
-        <div class="mx-4 curCity fs-5"> City Name</div>
-        <div class ="mx-4 curMeridiem fs-5"> Day or Night</div>
 
-      </div>
+        <div class="locationName mx-4 curCity fs-5"> City Name</div>
+
+        <div class="time d-flex text-light px-3 fw-lighter pb-4 d-none">
+          <div class="mx-4 curTime fs-5">12:00PM</div>
+          <div class ="mx-4 curMeridiem fs-5"> Day or Night</div>
+
+        </div>
+
     </div>
   </div>
-<!-- End of main body -->
-</div>
 
+</div>
+<!-- End of main body -->
 
   <script src="main.js"></script>
   <script src="forecast.js"></script>

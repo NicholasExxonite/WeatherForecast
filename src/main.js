@@ -2,9 +2,10 @@
 'use strict';
 
 const getCityForm = document.querySelector('form');
-const degree = document.querySelector('.centegrate span');
+const degreeCelsius = document.querySelector('.centegrate span');
+const degreeFahrenheit = document.querySelector('.fahrenheit span')
 const condition = document.querySelector('.condition');
-// const icon = document.querySelector('.icon img');
+const icon = document.querySelector('.icon img');
 const curTime = document.querySelector('.curTime');
 const curCity = document.querySelector('.curCity');
 const curMeridiem = document.querySelector('.curMeridiem');
@@ -52,8 +53,13 @@ const timestampConverter = (ts) =>{
   // convert timestamp to Date
   var time = new Date(ts);
 
+
+  var isotime = time.toISOString();
+  console.log(isotime);
+
   //get d/m/y
   var date = time.toLocaleDateString();
+  console.log(date);
 
   // var hour = time.getHours();
   // var min = time.getMinutes();
@@ -72,9 +78,11 @@ const updateUI = (data) =>{
   console.log(cityDetail);
   console.log(forecastDetails);
 
-  degree.textContent = forecastDetails.Temperature.Metric.Value;
+  degreeCelsius.textContent = forecastDetails.Temperature.Metric.Value;
+  degreeFahrenheit.textContent = forecastDetails.Temperature.Imperial.Value;
   condition.textContent = forecastDetails.WeatherText;
-  const weatherIconNumber = forecastDetails.weatherIcon
+  // const weatherIconNumber = forecastDetails.weatherIcon;
+  // icon.setAttribute('src', 'icons')
 
   //icon.setAttribute('src', `icons/`)
   const timestamp = forecastDetails.LocalObservationDateTime;
